@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --def: #96B7C4; 	
+	--inv: #fff;
+}
+
+input:focus textarea:focus select:focus{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+}
+
+
+a{
+    color:white;
+    transition: 2s;
+    text-decoration: none;
+}
+
+/*NAVIGACIJA, NAVBAR*/
+
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: default;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar.scrolled {
+    opacity: 97%;
+    border:none;
+    background-color: rgb(26, 23, 23);
+    height: 55px;
+
+}
+.nt1.scrollednt{
+    outline:none!important;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.logo-container{
+
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 30px
+}
+.navtekst{
+    display: flex;
+}
+
+.navtekst h4{
+    margin-left: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 20px
+}
+
+.nt{
+    cursor: pointer;
+}
+
+.nt2, .nt3, .nt4{
+    padding-left: 30px;
+    color: white;
+}
+
+.nt1{
+    color: white;
+}
+.nt:hover{
+    color: rgb(228, 220, 220);
+}
+
+/*-------------HEADER, SLIDER ----------*/
+
+.header-container{
+    width: 100%;
+    height: 670px;
+}
+.header-container{
+    background-image: url("images/img1.jpg"); 
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    height: 670px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 0.12rem solid white;
+    background-attachment: fixed;
+
+}
+
+header img{
+    height: 60px;
+    opacity: 80%;
+    transition: 0.3s;
+}
+header img:hover{
+    opacity: 100%;
+    transition: 0.4s;
+}
+
+header h1{
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 350;
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 10px;
+}
+.goodfood{
+    text-align: center;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 5px;
+}
+
+
+.header-inside{
+    cursor: default;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-inside.headerscrolled{
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    padding-bottom: 50px;
+    opacity: 0%;
+}
+.header-inside.headerscrolledback{
+    opacity: 100%;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    padding-top: 50px;
+}
+
+.tekst-sredina h1{
+    text-shadow: 2px 2px black;
+}
+
+.tekst-sredina{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.btn{
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.test2{
+    width: 100%;
+    height: 1000px;
+
+}
+
+/*-------------ABOUT US -------------*/
+
+.abt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.about-container{
+    width: 65%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.about-top{
+    width: 100%;
+    height: 30%;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.about-top h1{
+    font-size: 2.5rem;
+    letter-spacing: 20px;
+}
+.about-top p{
+    width: 100%;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.about-middle{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img{
+    width: 40px;   
+    height: 40px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.social-icons{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.social-icons img:hover{
+    width: 45px;
+    height: 45px;
+    transition: 0.3s;
+    
+}
+
+.about-img{
+    width: 95%;
+    height: 500px;
+    padding-left: 10px
+}
+
+.about-bottom{
+    width: 100%;
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    
+}
+
+
+/*SOBE*/
+
+.browse-rooms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+    color:black;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+}
+
+.slidecontainer{
+    display: flex;
+    margin-left: 50px;
+}
+
+.slidecontainer p{
+    margin-left: 5px;
+}
+
+
+#rooms-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ind-room{
+    width: 560px;
+    height: 400px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color:black;
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img:hover{
+    filter:grayscale(0%);
+    transition: 0.7s ease-out;
+    transform: scale(1.1);
+
+}
+
+.lijevo{
+    width: 530px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.ind-room img{
+    transition: 0.7s ease-out;
+    width: 530px;
+    height: 300px;
+    filter: grayscale(70%);
+}
+
+
+.desno p{
+    margin-bottom: 5px;
+}
+
+.desno h2{
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    padding-right: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.desno{
+    margin-left: 20px;
+}
+.btn-container button{
+    width: 200px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+    font-family: 'Abel', 'sans-serif';
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+
+.btn-container{
+    margin-top: 30px;
+    width: 80%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-container button:hover{background-color:rgb(251, 255, 255);
+    color: black;
+    transition: 0.2s ease-out;
+}
+
+.btn-container button:focus{background-color:rgb(54, 54, 54);}
+
+.space{
+    width: 100%;
+    height: 15px;
+    background-color: rgb(26, 23, 23);
+    margin-bottom: 50px;
+}
+
+section h2{
+    color:black;
+    font-family: 'Abel', sans-serif;
+    font-weight: 350;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: black;
+    height: 150px;
+    width: 100%;
+}
+
+/*booking pop out*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  height: 600px;
+  transition: 1s ease-out;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h2{
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 10px;
+}
+
+.rez-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.3rem;
+    transition: 0.5s ease-out;
+
+}
+
+.rez-lijevo{
+    margin-top: 20px;
+    width: 65%;
+    height: 90%;
+    padding-left: 10px;
+}
+
+#checkanim{
+    display: none;
+    height: 90%;
+    width: 100%;
+}
+
+
+.rez-desno{
+    margin-top: 20px;
+    width: 55%;
+    height: 90%;
+    align-items: center;
+    display: flex;
+    font-size: 2.3rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+
+
+.inpt{
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
+    width: 300px;
+    height: 25px;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.rez-lijevo button{
+    width: 200px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+    font-family: 'Abel', 'sans-serif';
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+
+#popunite{
+    color: red;
+    margin-top: 15px;
+}

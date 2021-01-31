@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HORECA Resort</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="script.js">
+      <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   </head>
+	
+   <body onload="changer(); loadRooms()">
+      <nav>
+         <div class="navbar">
+            <div class="navbar-container">
+               <div class="logo-container"><h3>HORECA resort</h3></div>
+               <div class="navtekst">
+                  <h4 class="nt nt1" > <a href=""></a>HOME</a></h4>
+                  <h4 class="nt nt2" >ABOUT US</h4>
+                  <h4 class="nt nt3">CONTACT</h4>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <header>
+         <div id="promijeni" class="header-container">
+            <div class="header-inside">
+               <div class="tekst-sredina">
+                  <h1>Luxury hotel & resort</h1>
+                  <p class="goodfood" >HORECA</p>
+                  <img src="images/line.png" alt="">
+                  <div class="btn">BOOK NOW</div>
+               </div>
+            </div>
+         </div>
+
+      </header>
+
+      <div class="abt">
+
+         <div class="about-container">
+            <div class="about-top">
+               <h1>ABOUT  US</h1>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, molestiae animi. Culpa laborum vel sint quaerat debitis suscipit maiores, dolore illo, officia sapiente, nihil pariatur corrupti dicta assumenda error dolorem?</p>
+            </div>
+            <div class="about-middle">
+               <div class="social-icons">
+                  <img src="images/fb.png" alt="">
+                  <img src="images/ig.png" alt="">
+                  <img src="images/tw.png" alt="">
+                  <img src="images/phone.png" alt="">
+               </div>
+               <div class="about-img"><img src="images/aboutus.png" alt=""></div>
+            </div>
+            <div class="about-bottom">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium voluptatem excepturi, tenetur placeat deleniti sapiente nemo, aspernatur, omnis magnam distinctio eos asperiores. Obcaecati fugiat sed veniam dolore atque repudiandae.</p>
+            </div>
+         </div>
+      </div>
+    
+      
+
+      <section>
+         
+         <div class="space"></div>
+         <h2>Browse our rooms and check for availability!</h2>
+         <div class="browse-rooms">
+            <form action="">
+               <label for="beds">Number of beds:</label>
+               <select id="beds" name="beds">
+            <option value="--">-</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+               </select>
+            </form>
+            <div class="slidecontainer">
+               <input type="range" min="100" max="600" value="600" class="slider" id="myRange">
+               <p>Max price: <span id="demo"></span> KM</p>
+             </div>
+         </div>
+   
+         <div id="rooms-container">
+         </div>
+      </section>
+      
+      <div id="myModal" class="modal">
+
+         <!-- Modal content -->
+         <div class="modal-content">
+           <span class="close">&times;</span>
+           <h2>HORECA Reservation System</h2>
+           <div class="rez-container">
+            <div class="rez-lijevo">
+               <form action="">
+               <label for="fname">First name:</label><br>
+               <input class="inpt" type="text" id="fname" name="fname" ><br>
+               <label for="lname">Last name:</label><br>
+               <input class="inpt" type="text" id="lname" name="lname"><br>
+               <label for="lname">E-mail:</label><br>
+               <input class="inpt" type="email" id="email" name="email"><br>
+               <h3>Additional services: </h3><br>
+               <input type="checkbox" id="box1" name="vehicle1">
+               <label for="vehicle1"> Wellness & Spa</label><br>
+               <input type="checkbox" id="box2" name="vehicle2">
+               <label for="vehicle2"> Souvenirs</label><br>
+               <input type="checkbox" id="box3" name="vehicle3">
+               <label for="vehicle3"> Room service</label><br><br>
+               <br>
+             </form> 
+             <button id="bkbtn">BOOK ROOM</button>
+            <p id="popunite"></p></div>
+            <div class="rez-desno">
+               <div class="checking">
+                  <label for="checkin">Check in:</label><br>
+                  <input type="date" id="checkin" name="checkin"><br>
+                  <label for="checkin">Check out:</label><br>
+                  <input type="date" id="checkout" name="checkout">
+      
+               </div>
+               <div class="total-cost">
+                  <h3>Total cost: </h3>
+                  <h3 id="cijenakm"></h3></div>
+               </div>
+              
+         </div>
+         <img id="checkanim" src="images/check-animation.gif" alt="">
+         </div>
+       
+       </div>
+
+      <footer></footer>
+      <script src="lib/moment/moment.min.js"></script>
+      <script src="script.js"></script>
+      </body>
+
+      
